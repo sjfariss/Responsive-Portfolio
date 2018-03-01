@@ -20,8 +20,12 @@ body {
     margin: 0 auto;
     clear: both;
 }
-
-h1, h2, h3, p {
+p, ul {
+    font-family: 'Arial', 'Helvetica Neve', Helvetica, sans-serif;
+    font-size: 14px;
+    
+}
+h1, h2, h3,  {
     margin-bottom: 20px;
 }
 
@@ -79,6 +83,7 @@ h2, h3 {
 nav {
     float: right;
     margin-top: 25px;
+    
 }
 
 nava a {
@@ -86,13 +91,13 @@ nava a {
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid #efefef;
+    border-left: 5px solid #efefef;
     padding-left: 15px;
     line-height: 18px;
 }
 
 nav a:first-child {
-    border-left: 0 none
+    border-left:0 none;
 }
 
 /*main*/
@@ -150,15 +155,6 @@ h3, .sidebar, h2 {
     margin-right: 0;
 }
 
-footer {
-    background: #666;
-    color: #fff;
-    padding: 30px;
-    clear: both;
-    border-top: 8px solid #4aaaa5;
-    color: #ccc;
-    font-size: 12px;
-}
 
 /*portfolio */
 .work {
@@ -232,15 +228,55 @@ input[type=submit] {
     padding: 10px;
     cursor: pointer;
 }
+footer p {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+}   
+    
+footer {
+    position: relative;
+    background-color: #666;
+    border-top: 8px solid #4aaaa5;
+    clear: both;
+    color: #ccc;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    margin-left: 0px;
+}
 /*to cover media responsiveness*/
 @-ms-viewport{
     width: device-width;
   }
-/*
+ /*
   These rules take effect when the browser's width
   is either 768px or less.
 */
 @media screen and (max-width: 768px) {
+    
+    body {
+      width: 100%
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 100%;
+      padding: 20px;
+    }
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+    #sidebar {
+      margin-top: 40px;
+    } 
+/*
+  These rules take effect when the browser's width
+  is either 600px or less.
+*/
+@media screen and (max-width: 600px) {
     
     body {
       width: 100%
